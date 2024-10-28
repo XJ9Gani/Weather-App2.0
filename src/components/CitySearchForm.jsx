@@ -69,14 +69,13 @@ export default function CitySearchForm() {
           value={city}
           onChange={handleCitySelect}
           placeholder="Введите название города"
-          className="search_input"
         />
       </Container>
 
       <Container>
         <ListGroup
           className="mt-1 position-absolute z-1 m-5"
-          style={{ width: "25%" }}
+          style={{ width: "70%" }}
         >
           {searchResults.map((city) => (
             <ListGroup.Item
@@ -93,7 +92,7 @@ export default function CitySearchForm() {
       {loading && <DataLoader />}
       {error && <Alert variant="danger">{}</Alert>}
       {data && (
-        <Container>
+        <Container className="d-flex justify-content-center">
           <Card className="m-5" style={{ maxWidth: "400px", margin: "auto" }}>
             <Card.Header>
               <Card.Title className="text-center">
