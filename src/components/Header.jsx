@@ -1,5 +1,14 @@
-import { Container } from "react-bootstrap";
+import { Container, Navbar } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
+import { useCallback } from "react";
 export default function Header() {
+  const activeLink = useCallback(
+    ({ isActive }) =>
+      isActive
+        ? "text-success   nav-link fs-2 m-3 fw-normal"
+        : "text-light nav-link fs-2 m-3",
+    []
+  );
   return (
     <header
       style={{
@@ -8,10 +17,20 @@ export default function Header() {
         position: "sticky",
         top: 0,
         left: 0,
-        backgroundColor: " rgb(18, 101, 179)",
+        backgroundColor: "#1a1a1a",
+        display: "flex",
+        justifyContent: "center",
+        zIndex: 1,
       }}
     >
-      <Container className="bg-dark m-0 p-0"></Container>
+      <Navbar>
+        <NavLink to="/" className={activeLink}>
+          Main
+        </NavLink>
+        <NavLink to="/about" className={activeLink}>
+          О приложении
+        </NavLink>
+      </Navbar>
     </header>
   );
 }

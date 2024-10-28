@@ -1,11 +1,14 @@
-import { Header, CitySearchForm } from "./components";
+import { Header } from "./components";
+import AppRouter from "./components/AppRouter";
+import { BrowserRouter } from "react-router-dom";
 export default function App() {
   return (
     <>
-      <Header />
-      <br />
-
-      <CitySearchForm />
+      <BrowserRouter>
+        <Header />
+        <br />
+        <AppRouter />
+      </BrowserRouter>
     </>
   );
 }

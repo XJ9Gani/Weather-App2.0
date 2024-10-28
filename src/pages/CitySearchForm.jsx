@@ -10,7 +10,7 @@ import {
 } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { getCityData } from "../store/slices/weatherSclice";
-import DataLoader from "./DataLoader";
+import DataLoader from "../components/DataLoader";
 import citiesData from "../city.list.json/city.list.json";
 export default function CitySearchForm() {
   const [city, setCity] = useState("Almaty");

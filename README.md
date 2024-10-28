@@ -1,8 +1,13 @@
-# React + Vite
+# Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+WeatherApp — это веб-приложение, которое предоставляет пользователям актуальную информацию о погоде для выбранных городов. Приложение использует данные с OpenWeatherMap API, чтобы показывать текущую погоду, прогноз на несколько дней, а также дополнительную информацию, такую как скорость ветра, влажность и атмосферное давление.
 
-Currently, two official plugins are available:
+# Технологии
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. JavaScript
+2. React.JS
+3. Redux-Toolkit
+4. Axios
+5. React-Bootstrap
+6. Vite
+7. React Router DOM
